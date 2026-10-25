@@ -1,0 +1,7 @@
+The purpose of this program is to provide a GUI that a non-experienced user can utilize to perform routine IT troubleshooting steps in a centralized location.  It was made for family to streamline technical issues.  
+
+Python is required to be installed on the machine, but admin privilege escalation is handled internal of the program and no module installs/imports are necessary.  
+
+PSWindowsUpdates was not ideal to import as it gives warnings of third-party repositories, and non-technical users should not be encouraged to trust things they don't understand the source.  As such, a natively organic solution was found from a Stack Overflow answer by Igor Kudrin (https://stackoverflow.coma/3847505, Licensed CC BY-SA 3.0.) Another solution for returning update history was adapted from a Stack Overflow answer by Antonio Moreno (dhttps://stackoverflow.com/a/73115357 License CC BY-SA 4.0).  Both solutions were adjusted for this purpose with error handling and notices for the user so that if there was an issue with Windows Updates that troubleshooting was not made more difficult.
+
+The Windows Updates were then tested using a Hyper-V Windows 11 Home virtual machine to ensure they would not damage unsuspecting machines unduly.
